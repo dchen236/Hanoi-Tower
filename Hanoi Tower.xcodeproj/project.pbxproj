@@ -12,6 +12,9 @@
 		3134AC3E21D19FEA0080D8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3134AC3C21D19FEA0080D8D6 /* Main.storyboard */; };
 		3134AC4021D19FEA0080D8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3134AC3F21D19FEA0080D8D6 /* Assets.xcassets */; };
 		3134AC4321D19FEA0080D8D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3134AC4121D19FEA0080D8D6 /* LaunchScreen.storyboard */; };
+		3134AC4F21D1A2EE0080D8D6 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134AC4E21D1A2EE0080D8D6 /* Disk.swift */; };
+		3134AC5121D1A2FF0080D8D6 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134AC5021D1A2FF0080D8D6 /* Tower.swift */; };
+		3134AC5321D1A6310080D8D6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134AC5221D1A6310080D8D6 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3134AC3F21D19FEA0080D8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3134AC4221D19FEA0080D8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3134AC4421D19FEA0080D8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3134AC4E21D1A2EE0080D8D6 /* Disk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
+		3134AC5021D1A2FF0080D8D6 /* Tower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+		3134AC5221D1A6310080D8D6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		3134AC3721D19FEA0080D8D6 /* Hanoi Tower */ = {
 			isa = PBXGroup;
 			children = (
-				3134AC3821D19FEA0080D8D6 /* AppDelegate.swift */,
-				3134AC3A21D19FEA0080D8D6 /* ViewController.swift */,
-				3134AC3C21D19FEA0080D8D6 /* Main.storyboard */,
-				3134AC3F21D19FEA0080D8D6 /* Assets.xcassets */,
-				3134AC4121D19FEA0080D8D6 /* LaunchScreen.storyboard */,
-				3134AC4421D19FEA0080D8D6 /* Info.plist */,
+				3134AC4D21D1A0940080D8D6 /* Models */,
+				3134AC4B21D1A05C0080D8D6 /* Views */,
+				3134AC4A21D1A04A0080D8D6 /* Controllers */,
+				3134AC4C21D1A0670080D8D6 /* Supporting Files */,
 			);
 			path = "Hanoi Tower";
+			sourceTree = "<group>";
+		};
+		3134AC4A21D1A04A0080D8D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3134AC3821D19FEA0080D8D6 /* AppDelegate.swift */,
+				3134AC3A21D19FEA0080D8D6 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3134AC4B21D1A05C0080D8D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3134AC3C21D19FEA0080D8D6 /* Main.storyboard */,
+				3134AC4121D19FEA0080D8D6 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3134AC4C21D1A0670080D8D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3134AC3F21D19FEA0080D8D6 /* Assets.xcassets */,
+				3134AC4421D19FEA0080D8D6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3134AC4D21D1A0940080D8D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3134AC4E21D1A2EE0080D8D6 /* Disk.swift */,
+				3134AC5021D1A2FF0080D8D6 /* Tower.swift */,
+				3134AC5221D1A6310080D8D6 /* Game.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3134AC4F21D1A2EE0080D8D6 /* Disk.swift in Sources */,
+				3134AC5321D1A6310080D8D6 /* Game.swift in Sources */,
 				3134AC3B21D19FEA0080D8D6 /* ViewController.swift in Sources */,
 				3134AC3921D19FEA0080D8D6 /* AppDelegate.swift in Sources */,
+				3134AC5121D1A2FF0080D8D6 /* Tower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQW6S5KD6L;
-				INFOPLIST_FILE = "Hanoi Tower/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Hanoi Tower/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQW6S5KD6L;
-				INFOPLIST_FILE = "Hanoi Tower/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Hanoi Tower/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
